@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url("./Sunrise-Background-Wallpaper-Vector.jpg") ;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    height: 60px;
+    color: rgb(197, 197, 197);
+    text-shadow: 2px 2px 4px rgba(189, 12, 12, 0.5);
+}
+
+.gameContainer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 90px;
+    
+    /* margin-left: -50px; */
+    /* background-color: black; */
+}
+
+.container{
+    /* margin-left: 10px; */
+    /* background-color: rgb(132, 132, 35); */
+    width: 459px;
+    height: 459px;
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    position: relative;
+}
+
+.box{
+    font-size: 7vw;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: rgba(220, 220, 208, 0.288);
+    cursor: pointer;
+}
+ 
+.box span{
+    font-family: 'Dancing Script', cursive;
+}
+
+.gameInfo {
+    /* background-color: pink; */
+    margin-left: 30px;
+    width: 400px;
+}
+
+
+.imagebox img{
+    /* display: none; */
+    width: 0px;
+    transition: width 1s ease-in-out;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.info{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.reset{
+    border: none;
+    margin-left: 45px;
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: #ebebe2;
+    font-family:cursive;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    /* transition: background-color 0.3s;  */
+}
+/* .button:active {
+    animation: clickAnimation 0.2s ease-in-out; 
+    background-color: #00b300; 
+  }
+  
+  @keyframes clickAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  } */
+
+.reset:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+ .gameContainer{
+    flex-wrap: wrap;
+    /* background-color: wheat; */
+ }   
+ .gameInfo{
+    margin-top: -100px;
+ }
+}
+
+.line{
+    background-color: black;
+    width: 0px;
+    height: 465px;
+    position:absolute;
+    transition: 1s ease-in-out;
+    left: 0;
+}
+
+
+.Score{
+    background-color: pink;
+    font-weight: bold;
+    border: 2px solid black;
+}
